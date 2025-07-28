@@ -1,0 +1,6 @@
+                                                          Lab notes-programm -03 
+string templates also known as template literals are a powerful feature in javascript that allows you to create to strings with embedded expression,multline content and dynamic values
+They are defined using backticks (')instead of single (') or double(")qoutes
+string interpolation
+-->string data define in blacktick(`)
+-->variable mention in ${}
