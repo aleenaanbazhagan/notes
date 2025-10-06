@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Vastra | Products</title>
+  <link rel="stylesheet" href="products.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <h1 class="brand">Global <span>Vastra</span></h1>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link active">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link">Cart (<span id="cartCount">0</span>)</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">Login</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <header class="page-header">
+      <h1>Our Products</h1>
+      <p>Discover our beautiful collection of traditional and modern Indian fashion</p>
+    </header>
+
+    <section class="product-section">
+      <!-- Product 1 -->
+      <div class="product-card" data-id="1">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Designer Kurti" class="product-img">
+        <div class="product-info">
+          <h2>Designer Kurti</h2>
+          <p class="description">Elegant cotton kurti perfect for casual wear</p>
+          <p class="price">₹850</p>
+          <div class="btn-group">
+            <button class="btn buy-btn" onclick="buyNow(1, 'Designer Kurti', 850)">Buy Now</button>
+            <button class="btn cart-btn" onclick="addToCart(1, 'Designer Kurti', 850, 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-id="2">
+        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Silk Saree" class="product-img">
+        <div class="product-info">
+          <h2>Silk Saree</h2>
+          <p class="description">Premium silk saree with intricate designs</p>
+          <p class="price">₹999</p>
+          <div class="btn-group">
+            <button class="btn buy-btn" onclick="buyNow(2, 'Silk Saree', 999)">Buy Now</button>
+            <button class="btn cart-btn" onclick="addToCart(2, 'Silk Saree', 999, 'https://images.unsplash.com/photo-1583391733956-6c78276477e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" data-id="3">
+        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Traditional Kurti" class="product-img">
+        <div class="product-info">
+          <h2>Traditional Kurti</h2>
+          <p class="description">Beautiful traditional kurti with embroidery</p>
+          <p class="price">₹1500</p>
+          <div class="btn-group">
+            <button class="btn buy-btn" onclick="buyNow(3, 'Traditional Kurti', 1500)">Buy Now</button>
+            <button class="btn cart-btn" onclick="addToCart(3, 'Traditional Kurti', 1500, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" data-id="4">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Floral Dress" class="product-img">
+        <div class="product-info">
+          <h2>Floral Dress</h2>
+          <p class="description">Stylish floral dress for modern women</p>
+          <p class="price">₹1,899</p>
+          <div class="btn-group">
+            <button class="btn buy-btn" onclick="buyNow(4, 'Floral Dress', 1899)">Buy Now</button>
+            <button class="btn cart-btn" onclick="addToCart(4, 'Floral Dress', 1899, 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card" data-id="5">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Handwork Saree" class="product-img">
+        <div class="product-info">
+          <h2>Handwork Saree</h2>
+          <p class="description">Exquisite handwork saree with golden threads</p>
+          <p class="price">₹2500</p>
+          <div class="btn-group">
+            <button class="btn buy-btn" onclick="buyNow(5, 'Handwork Saree', 2500)">Buy Now</button>
+            <button class="btn cart-btn" onclick="addToCart(5, 'Handwork Saree', 2500, 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card" data-id="6">
+        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Party Frock" class="product-img">
+        <div class="product-info">
+          <h2>Party Frock</h2>
+          <p class="description">Elegant party frock for special occasions</p>
+          <p class="price">₹1000</p>
+          <div class="btn-group">
+            <button class="btn buy-btn" onclick="buyNow(6, 'Party Frock', 1000)">Buy Now</button>
+            <button class="btn cart-btn" onclick="addToCart(6, 'Party Frock', 1000, 'https://images.unsplash.com/photo-1583391733956-6c78276477e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card" data-id="7">
+        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Casual Kurti" class="product-img">
+        <div class="product-info">
+          <h2>Casual Kurti</h2>
+          <p class="description">Comfortable casual kurti for everyday wear</p>
+          <p class="price">₹1200</p>
+          <div class="btn-group">
+            <button class="btn buy-btn" onclick="buyNow(7, 'Casual Kurti', 1200)">Buy Now</button>
+            <button class="btn cart-btn" onclick="addToCart(7, 'Casual Kurti', 1200, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart notification -->
+  <div id="cartNotification" class="cart-notification">
+    <p>Item added to cart!</p>
+  </div>
+
+  <script src="products.js"></script>
+</body>
+</html>

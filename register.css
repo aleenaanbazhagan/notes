@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #b71c1c, #e53935);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 24px;
+  color: #b71c1c;
+  font-weight: 700;
+}
+
+.brand span {
+  color: #000;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #b71c1c;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 20px;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 450px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.register-box .brand {
+  text-align: center;
+  font-size: 32px;
+  color: #b71c1c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 15px 0 30px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #b71c1c;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-group {
+  margin-bottom: 25px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.link {
+  color: #b71c1c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn-register {
+  width: 100%;
+  background: #b71c1c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.btn-register:hover {
+  background: #d32f2f;
+  transform: translateY(-1px);
+}
+
+.btn-register:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-text a {
+  color: #b71c1c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Password strength indicator */
+.password-strength {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.strength-weak {
+  color: #ff4444;
+}
+
+.strength-medium {
+  color: #ff8800;
+}
+
+.strength-strong {
+  color: #44aa44;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .container {
+    padding: 100px 20px 20px;
+  }
+
+  .register-box {
+    padding: 30px 25px;
+  }
+
+  .register-box .brand {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background: #fff;
+  }
+
+  .container {
+    background: linear-gradient(to right, #b71c1c, #e53935);
+    padding: 100px 20px 20px;
+  }
+
+  .register-box {
+    max-width: 100%;
+    padding: 25px;
+    box-shadow: none;
+    border-radius: 12px;
+  }
+
+  .brand {
+    font-size: 24px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .btn-register {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .checkbox-label {
+    font-size: 13px;
+  }
+
+  .login-text {
+    font-size: 13px;
+  }
+}
