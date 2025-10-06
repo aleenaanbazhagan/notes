@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Vastra | Register</title>
+  <link rel="stylesheet" href="register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <h1 class="brand">Global <span>Vastra</span></h1>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link">Cart (<span id="cartCount">0</span>)</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="register-box">
+      <h1 class="brand">Global <span>Vastra</span></h1>
+      <h2>Create Your Account</h2>
+
+      <form id="registerForm">
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Create a password" required>
+            <span id="togglePassword" class="toggle">👁️</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+            <span id="toggleConfirmPassword" class="toggle">👁️</span>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="terms" required>
+            <span class="checkmark"></span>
+            I agree to the <a href="#" class="link">Terms & Conditions</a>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-register">Create Account</button>
+
+        <p class="login-text">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>

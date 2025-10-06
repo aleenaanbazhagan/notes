@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Vastra | Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <h1 class="brand">Global <span>Vastra</span></h1>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link">Cart (<span id="cartCount">0</span>)</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link active">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="login-box">
+      <h1 class="brand">Global <span>Vastra</span></h1>
+      <h2>Login to Your Account</h2>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <span id="togglePassword" class="toggle">👁️</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-login">Login</button>
+
+        <p class="divider">or</p>
+
+        <div class="social-login">
+          <button type="button" class="btn-social google">Continue with Google</button>
+          <button type="button" class="btn-social microsoft">Continue with Microsoft</button>
+        </div>
+
+        <p class="register-text">
+          Don't have an account? <a href="register.html">Sign up here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
